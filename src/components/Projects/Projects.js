@@ -7,6 +7,7 @@ import peers from "../../Assets/Projects/peers.png";
 import brews from "../../Assets/Projects/brews.png";
 import bike from "../../Assets/Projects/bike.png";
 import discordbot from "../../Assets/Projects/discord.png";
+import warehouse from "../../Assets/Projects/warehouse.png";
 import medium from "../../Assets/Projects/medium.png";
 import github from "../../Assets/Projects/github.jpg";
 
@@ -69,8 +70,18 @@ function Projects() {
               imgPath={discordbot}
               isBlog={false}
               title="Discord Multi-Function Bot"
-              description="A Discord Service built with DiscordJS v14.10.2. Functionality includes AI Chat, Image Generation, Text Processing, and many more. Invite the bot through the link provided in the Github Repository."
+              description="A Discord Service built with DiscordJS v14.10.2. Functionality includes AI Chat, Image Generation, Text Processing, and many more. You can invite the bot through the link provided in the Github Repository."
               ghLink="https://github.com/dixonfrederick/sisters-discord-service"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={warehouse}
+              isBlog={false}
+              title="Warehouse API"
+              description="A little Warehouse API service built on Springboot, documented with Swagger."
+              ghLink="https://github.com/dixonfrederick/warehouse"
             />
           </Col>
 
@@ -79,7 +90,7 @@ function Projects() {
               imgPath={medium}
               isBlog={true}
               title="Medium Blog"
-              description="My Medium Blog"
+              description="My Medium Blog, contains stuffs related to my software development experience, such as Scrum, Testing, QA, and more."
               ghLink="https://medium.com/@dixon.frederick"
             />
           </Col>
@@ -88,7 +99,7 @@ function Projects() {
             <ProjectCard
               imgPath={github}
               isBlog={false}
-              title="Many More.."
+              title="Many More . ."
               description="Other projects are available in my Github, feel free to check it out :>"
               ghLink="https://github.com/dixonfrederick"
             />

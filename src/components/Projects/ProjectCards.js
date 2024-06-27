@@ -1,13 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+  // useEffect(() => {
+  //   const images = document.querySelectorAll('.card-img-top');
+  //   let maxHeight = 0;
+  //   let diffHeight = 0;
+
+  //   Calculate the maximum height of all images
+  //   images.forEach((img) => {
+  //     if (img.offsetHeight > maxHeight) {
+  //       maxHeight = img.offsetHeight;
+  //     }
+  //   });
+
+  //   Apply max height and conditional border
+  //   images.forEach((img) => {
+  //     img.style.maxHeight = `${maxHeight}px`;
+  //     if (img.offsetHeight < maxHeight) {
+  //       diffHeight = (maxHeight - img.offsetHeight)/2;
+  //       img.style.paddingTop = `${diffHeight}px`;
+  //       img.style.paddingBottom = `${diffHeight}px`;
+  //     }
+  //   });
+  // }, []);
+
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="card-div">
+        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>

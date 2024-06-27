@@ -294,10 +294,18 @@ button:focus {
   color: #cd5ff8;
 }
 
+.type-container {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 170px;
+  text-align: left;
+}
+
 .Typewriter__wrapper {
   font-size: 2.4em !important;
   color: #be6adf !important;
   font-weight: 600 !important;
+  white-space: nowrap;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
@@ -305,10 +313,34 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .heading {
+    font-size: 2.2em !important;
+    padding-left: 30px !important;
+  }
+  
+  .heading-name {
+    font-size: 2.2em !important;
+    padding-left: 30px !important;
+  }
+  
+  .heading-role {
+    font-size: 2.2em !important;
+    padding-top: 35px !important;
+    padding-left: 30px !important;
+  }
+
+  .type-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 75px;
+    text-align: left;
+  }
+
   .Typewriter__wrapper {
-    font-size: 2.4em !important;
+    font-size: 2.2em !important;
     font-weight: 600 !important;
     position: absolute !important;
+    white-space: nowrap;
   }
   .Typewriter__cursor {
     display: none !important;
@@ -517,13 +549,17 @@ button:focus {
   overflow: hidden !important;
   box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
 }
-
+.card-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+}
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
   width: auto;
-  height: 200px; /* Fixed height for the image container */
   display: flex;
   justify-content: center;
   align-items: center;

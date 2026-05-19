@@ -1,65 +1,71 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
-function ProjectCards(props) {
-  // useEffect(() => {
-  //   const images = document.querySelectorAll('.card-img-top');
-  //   let maxHeight = 0;
-  //   let diffHeight = 0;
-
-  //   Calculate the maximum height of all images
-  //   images.forEach((img) => {
-  //     if (img.offsetHeight > maxHeight) {
-  //       maxHeight = img.offsetHeight;
-  //     }
-  //   });
-
-  //   Apply max height and conditional border
-  //   images.forEach((img) => {
-  //     img.style.maxHeight = `${maxHeight}px`;
-  //     if (img.offsetHeight < maxHeight) {
-  //       diffHeight = (maxHeight - img.offsetHeight)/2;
-  //       img.style.paddingTop = `${diffHeight}px`;
-  //       img.style.paddingBottom = `${diffHeight}px`;
-  //     }
-  //   });
-  // }, []);
+function ProjectCards({
+  category,
+  demoLink,
+  demoLabel = "Live demo",
+  description,
+  ghLink,
+  image,
+  isBlog = false,
+  stack = [],
+  title,
+}) {
+  const hasActions = Boolean(ghLink || demoLink);
 
   return (
     <Card className="project-card-view">
-      <div className="card-div">
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="project-card-media">
+        <Card.Img variant="top" src={image} alt={`${title} preview`} className="project-card-image" />
       </div>
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+      <Card.Body className="project-card-body">
+        <span className="project-category">{category}</span>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text className="project-card-copy">
+          {description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
+        <div className="project-chip-list">
+          {stack.map((item) => (
+            <span className="project-chip" key={item}>
+              {item}
+            </span>
+          ))}
+        </div>
+        {hasActions && (
+          <div className="project-actions">
+            {ghLink && (
+              <Button
+                variant="primary"
+                href={ghLink}
+                target="_blank"
+                rel="noreferrer"
+                className="project-button"
+              >
+                {isBlog ? <CgWebsite /> : <BsGithub />} &nbsp;
+                {isBlog ? "Read article" : "View source"}
+              </Button>
+            )}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
+            {!isBlog && demoLink && (
+              <Button
+                variant="primary"
+                href={demoLink}
+                target="_blank"
+                rel="noreferrer"
+                className={`project-button${ghLink ? " project-button-secondary" : ""}`}
+              >
+                <CgWebsite /> &nbsp;{demoLabel}
+              </Button>
+            )}
+          </div>
         )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

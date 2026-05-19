@@ -3,49 +3,55 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import AboutCard from "./AboutCard";
+import Experience from "./Experience";
 import Toolstack from "./Toolstack";
 import Home2 from "../Home/Home2";
 
 function About() {
   return (
     <Container fluid className="about-section">
-      <Home2 />
       <Particle />
+      <Home2 />
       <Container>
-        {/* <Row style={{ justifyContent: "center", padding: "10px" }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: "center",
-              paddingTop: "30px",
-              paddingBottom: "50px",
-            }}
-          >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
-            </h1>
-            <Aboutcard />
+        <Row className="justify-content-center about-summary-shell">
+          <Col xl={10}>
+            <AboutCard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
-            className="about-img"
-          >
-            <img src={laptopImg} alt="about" className="img-fluid" />
-          </Col>
-        </Row> */}
-        <h1 className="project-heading">
-          My <strong className="purple">Skills </strong>
-        </h1>
+        </Row>
 
-        <Techstack />
+        <section className="experience-shell">
+          <div className="section-header">
+            <span className="section-eyebrow">Experience</span>
+            <h2 className="section-heading">
+              Work across integrations, product features, teaching, and backend systems.
+            </h2>
+            <p className="section-copy">
+              A focused overview of recent roles and credentials from my latest CV.
+            </p>
+          </div>
+          <Experience />
+        </section>
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I worked with
-        </h1>
-        <Toolstack />
+        <section className="skills-shell">
+          <div className="section-header">
+            <span className="section-eyebrow">Core stack</span>
+            <h2 className="section-heading">
+              Tech Stacks
+            </h2>
+          </div>
+          <Techstack />
+        </section>
+
+        <section className="skills-shell">
+          <div className="section-header">
+            <span className="section-eyebrow">Workflow</span>
+            <h2 className="section-heading">
+              Supporting Tools
+            </h2>
+          </div>
+          <Toolstack />
+        </section>
 
         <Github />
       </Container>

@@ -1,120 +1,52 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 import profile from "../../Assets/profile.png";
+
+const detailItems = [
+  "Currently building and integrating systems at Sanka across e-commerce, POS, and ERP workflows.",
+  "Comfortable designing APIs, modeling data, and shaping backend workflows that are maintainable after launch."
+];
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="profile-section" id="about">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              About <span className="purple"> Me </span>
+        <Row className="align-items-center gy-5">
+          <Col lg={7} className="home-about-description">
+            <span className="section-eyebrow">About me</span>
+            <h1 className="section-heading">
+              A pragmatic engineer who values reliable systems, thoughtful execution, and clear communication.
             </h1>
-            <p className="home-about-body">
-              I am a motivated Computer Science fresh graduate from Universitas Indonesia and a Certified <b className="purple">Associate Cloud Engineer</b>.
-              <br />
-              <br />I am a quick learner eager to improve and contribute. 
-              <br />
-              <br />I am capable of working alone or in teams and proficient with various programming languages and frameworks.
-              <br />
-              <br />I have experience in <b className="purple">app development</b> across platforms, <b className="purple">project management</b>, <b className="purple">cloud computing</b>, and <b className="purple">problem solving</b>.
-              {/* <br />
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i> */}
+            <p className="section-copy profile-copy">
+              I am a motivated Computer Science graduate from Universitas Indonesia with hands-on
+              experience spanning backend development, full-stack product work, integrations, project
+              coordination, cloud computing, and applied problem solving. I tend to work best in
+              environments where quality, clarity, and steady delivery matter more than noise.
             </p>
+            <div className="profile-detail-grid">
+              {detailItems.map((item) => (
+                <div className="profile-detail-card" key={item}>
+                  {item}
+                </div>
+              ))}
+            </div>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={profile} className="img-fluid" alt="avatar" style={{ maxHeight: "400px" }} />
+          <Col lg={5} className="myAvtar">
+            <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6} scale={1.01} transitionSpeed={1200}>
+              <div className="portrait-shell">
+                <img src={profile} className="img-fluid portrait-frame" alt="Dixon Frederick" />
+                <div className="portrait-caption">
+                  <span>Current emphasis</span>
+                  <strong>Full Stack software engineering, platform integrations, and collaborative product work.</strong>
+                </div>
+              </div>
             </Tilt>
           </Col>
         </Row>
-        {/* <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row> */}
       </Container>
     </Container>
   );
 }
+
 export default Home2;

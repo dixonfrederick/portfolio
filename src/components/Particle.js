@@ -5,45 +5,62 @@ function Particle() {
   return (
     <Particles
       id="tsparticles"
-      style={{ position: "absolute", zIndex: -1, pointerEvents: "none"}}
+      style={{ position: "absolute", zIndex: -1, pointerEvents: "none" }}
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 54,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 1200,
             },
           },
+          color: {
+            value: "#8d63d2",
+          },
           line_linked: {
-            enable: false,
-            opacity: 0.03,
+            enable: true,
+            color: "#6f42c1",
+            distance: 150,
+            opacity: 0.14,
           },
           move: {
-            direction: "right",
-            speed: 0.05,
+            direction: "none",
+            enable: true,
+            speed: 0.3,
+            out_mode: "out",
           },
           size: {
-            value: 1,
+            value: 2,
+            random: true,
           },
           opacity: {
+            value: 0.16,
+            random: true,
             anim: {
               enable: true,
-              speed: 1,
+              speed: 0.5,
               opacity_min: 0.05,
+              sync: false,
             },
           },
         },
         interactivity: {
           events: {
-            onclick: {
+            onhover: {
               enable: true,
-              mode: "push",
+              mode: "grab",
+            },
+            onclick: {
+              enable: false,
             },
           },
           modes: {
-            push: {
-              particles_nb: 1,
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 0.22,
+              },
             },
           },
         },

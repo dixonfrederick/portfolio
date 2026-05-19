@@ -2,39 +2,32 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
+const workingStyle = [
+  "Translate broad requirements into concrete implementation steps without losing delivery momentum.",
+  "Design APIs, data models, and workflows with enough structure to remain maintainable after launch.",
+  "Balance code quality, testing, and practical tradeoffs so the result stays useful.",
+  "Contribute comfortably across technical discussions, solo execution, and collaborative team workflows.",
+];
+
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="quote-card-view about-summary-card">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+          <span className="section-eyebrow">Working style</span>
+          <h3 className="about-summary-title">How I contribute to teams and products.</h3>
+          <p className="about-summary-copy">
+            I care about shipping software that feels considered both technically and operationally:
+            APIs, data models, workflows, and user-facing surfaces that are clear enough to extend
+            after the first launch.
           </p>
-          {/* <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul> */}
-
-          {/* <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p> */}
-          {/* <footer className="blockquote-footer">Soumyajit</footer> */}
+          <ul>
+            {workingStyle.map((item) => (
+              <li className="about-activity" key={item}>
+                <ImPointRight /> {item}
+              </li>
+            ))}
+          </ul>
         </blockquote>
       </Card.Body>
     </Card>

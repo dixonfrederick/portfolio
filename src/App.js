@@ -13,12 +13,21 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+const getInitialTheme = () => {
+  if (typeof window === "undefined") {
+    return "dark";
+  }
+
+  return window.localStorage.getItem("portfolio-theme") || "dark";
+};
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -28,11 +37,20 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    window.localStorage.setItem("portfolio-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+  };
+
   return (
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+        <Navbar theme={theme} onToggleTheme={toggleTheme} />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />

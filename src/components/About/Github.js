@@ -1,21 +1,26 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
-import { Row } from "react-bootstrap";
 
 function Github() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        <strong className="purple">Github</strong> Contributions
-      </h1>
-      <GitHubCalendar
-        username="dixonfrederick"
-        blockSize={15}
-        blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
-      />
-    </Row>
+    <section className="github-panel">
+      <div className="section-header">
+        <span className="section-eyebrow">Consistency</span>
+        <h2 className="section-heading">GitHub contribution activity.</h2>
+        <p className="section-copy">
+          A quick view of how frequently I spend time building, iterating, and contributing in code.
+        </p>
+      </div>
+      <div className="github-calendar-shell">
+        <GitHubCalendar
+          username="dixonfrederick"
+          blockSize={14}
+          blockMargin={6}
+          color="#c084f5"
+          fontSize={14}
+        />
+      </div>
+    </section>
   );
 }
 

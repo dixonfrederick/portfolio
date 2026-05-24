@@ -499,7 +499,9 @@ button:focus,
 }
 
 .home-section {
+  position: relative;
   overflow: hidden;
+  overflow-x: clip;
   padding-top: 8.5rem !important;
   padding-bottom: 3.5rem !important;
 }

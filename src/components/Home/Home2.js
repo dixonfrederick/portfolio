@@ -4,8 +4,9 @@ import Tilt from "react-parallax-tilt";
 import profile from "../../Assets/profile.png";
 
 const detailItems = [
-  "Currently building and integrating systems at Sanka across e-commerce, POS, and ERP workflows.",
-  "Comfortable designing APIs, modeling data, and shaping backend workflows that are maintainable after launch."
+  "Recently built Sanka integrations across CRM, e-commerce, POS, ERP, and third-party platform workflows.",
+  "Comfortable improving existing systems, connecting applications, and making software easier to maintain.",
+  "Steady with evolving requirements, unfamiliar tools, and collaborative delivery across product teams.",
 ];
 
 function Home2() {
@@ -19,10 +20,10 @@ function Home2() {
               A pragmatic engineer who values reliable systems, thoughtful execution, and clear communication.
             </h1>
             <p className="section-copy profile-copy">
-              I am a motivated Computer Science graduate from Universitas Indonesia with hands-on
-              experience spanning backend development, full-stack product work, integrations, project
-              coordination, cloud computing, and applied problem solving. I tend to work best in
-              environments where quality, clarity, and steady delivery matter more than noise.
+              I am a Software Engineer and Computer Science graduate from Universitas Indonesia with
+              hands-on experience spanning backend development, full-stack product work, integrations,
+              automated workflows, testing, and applied problem solving. I tend to work best in
+              environments where user needs, business context, quality, and steady delivery all matter.
             </p>
             <div className="profile-detail-grid">
               {detailItems.map((item) => (
@@ -37,8 +38,8 @@ function Home2() {
               <div className="portrait-shell">
                 <img src={profile} className="img-fluid portrait-frame" alt="Dixon Frederick" />
                 <div className="portrait-caption">
-                  <span>Current emphasis</span>
-                  <strong>Full Stack software engineering, platform integrations, and collaborative product work.</strong>
+                  <span>Engineering emphasis</span>
+                  <strong>Full-stack software engineering, platform integrations, and collaborative product work.</strong>
                 </div>
               </div>
             </Tilt>

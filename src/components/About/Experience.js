@@ -5,25 +5,26 @@ const experienceItems = [
   {
     role: "Software Engineer",
     organization: "Sanka",
-    period: "September 2024 - Present",
-    summary: "Building product features and integrations across commerce and operational systems.",
+    period: "September 2024 - May 2026",
+    summary: "Built product features, integrations, and workflow improvements across commerce and operational systems.",
     points: [
-      "Integrate Sanka with e-commerce, POS, and ERP platforms including HubSpot, Shopify, and Salesforce.",
-      "Develop custom apps on partner platforms to support business-specific workflows.",
-      "Ship features for the Sanka site and ERP product with a backend and full-stack implementation focus.",
+      "Integrated Sanka with 10+ CRM, e-commerce, POS, and ERP platforms including HubSpot, Shopify, and Salesforce.",
+      "Built custom applications, extensions, and automated workflows for third-party platforms.",
+      "Migrated Django template-based pages to React and API-driven architecture for smoother user experiences.",
+      "Maintained automated tests and resolved customer-reported issues to improve product reliability.",
     ],
-    tags: ["API Integrations", "ERP", "Full-Stack Development"],
+    tags: ["API Integrations", "React", "Automation"],
     featured: true,
   },
   {
     role: "Teaching & Research Assistant",
     organization: "Universitas Indonesia",
-    period: "February 2024 - April 2024",
+    period: "February 2023 - July 2024",
     summary: "Supported teaching responsibilities and simulation-focused research work.",
     points: [
       "Assisted Discrete Mathematics and Introduction to Computer Organization courses.",
-      "Migrated, configured, and ran LAMMPS simulations across different environments.",
-      "Tested and debugged simulation runs to improve reliability during experimentation.",
+      "Migrated, configured, and ran LAMMPS simulations for research workflows.",
+      "Tested and debugged simulation results across 10+ scenarios and environments.",
     ],
     tags: ["Teaching", "Research", "Debugging"],
   },
@@ -33,7 +34,7 @@ const experienceItems = [
     period: "August 2023 - December 2023",
     summary: "Worked on backend-driven UI infrastructure and stock management workflows.",
     points: [
-      "Developed and maintained Django widgets for a backend-driven UI application framework.",
+      "Developed and maintained 10+ Django widgets for a backend-driven UI application framework.",
       "Built stock management functionality across databases, models, APIs, and pages.",
     ],
     tags: ["Django", "API Development", "System Management"],
@@ -47,9 +48,9 @@ const credentialItems = [
     detail: "2020 - 2024",
   },
   {
-    label: "Certification",
-    value: "Google Cloud Certified Associate Cloud Engineer",
-    detail: "Issued December 2023",
+    label: "Language",
+    value: "English",
+    detail: "Professional proficiency",
   },
 ];
 
@@ -85,7 +86,7 @@ function Experience() {
 
       <div className="credentials-shell">
         <div className="credentials-header">
-          <h3>Education and Certification</h3>
+          <h3>Education and Profile</h3>
         </div>
         <Row className="g-3 credential-grid justify-content-center">
           {credentialItems.map((item) => (

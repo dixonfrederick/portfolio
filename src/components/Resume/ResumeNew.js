@@ -27,7 +27,7 @@ function ResumeNew() {
         <div className="section-header section-header-centered resume-header">
           <span className="section-eyebrow">Resume</span>
           <h1 className="section-heading">
-            A concise overview of my current experience, focus areas, and project background.
+            A concise overview of my recent experience, focus areas, and project background.
           </h1>
           <p className="section-copy">
             Preview the latest 2026 resume below or open the PDF directly for a cleaner read.

@@ -12,7 +12,7 @@ function Projects() {
         <div className="section-header section-header-centered">
           <span className="section-eyebrow">Selected work</span>
           <h1 className="section-heading">
-            Projects spanning cloud delivery, applied systems work, and product engineering.
+            Projects spanning platform delivery, applied systems work, and product engineering.
           </h1>
           <p className="section-copy">
             A mix of production-style builds, research-oriented work, and practical experiments with real implementation constraints.

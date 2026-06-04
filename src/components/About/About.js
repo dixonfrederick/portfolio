@@ -27,7 +27,7 @@ function About() {
               Work across integrations, product features, teaching, and backend systems.
             </h2>
             <p className="section-copy">
-              A focused overview of recent roles and credentials from my latest CV.
+              A focused overview of recent roles, education, and profile details from my latest CV.
             </p>
           </div>
           <Experience />

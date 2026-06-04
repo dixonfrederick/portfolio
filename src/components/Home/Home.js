@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiFillInstagram, AiOutlineArrowRight } from "react-icons/ai";
-import { FiCloud, FiCode, FiLayers } from "react-icons/fi";
+import { FiCode, FiLayers, FiShare2 } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 import Particle from "../Particle";
 import ProjectCard from "../Projects/ProjectCards";
@@ -17,9 +17,9 @@ const capabilityCards = [
     copy: "Building product features across APIs, UI surfaces, data models, and the practical seams in between.",
   },
   {
-    icon: <FiCloud />,
+    icon: <FiShare2 />,
     title: "Integration-aware Engineering",
-    copy: "Working across e-commerce, POS, ERP, and cloud-backed systems with maintainability in mind.",
+    copy: "Working across CRM, e-commerce, POS, ERP, and third-party platforms with maintainability in mind.",
   },
   {
     icon: <FiLayers />,
@@ -37,18 +37,19 @@ function Home() {
           <Row className="align-items-center gy-5 home-grid">
             <Col lg={7} className="home-copy">
               <span className="section-eyebrow reveal-up">
-                Software engineer with backend, frontend, and cloud experience
+                Software engineer with backend, frontend, and integration experience
               </span>
               <h1 className="hero-title reveal-up reveal-delay-1">
                 Building reliable digital products with a calm, deliberate approach.
               </h1>
               <p className="hero-lead reveal-up reveal-delay-2">
-                I am Dixon Frederick, a Computer Science graduate from Universitas Indonesia,
-                Google Cloud Certified Associate Cloud Engineer, and Software Engineer at Sanka.
-                I build integrations and product features across e-commerce, POS, and ERP workflows.
+                I am Dixon Frederick, a Software Engineer and Computer Science graduate from
+                Universitas Indonesia with experience building software products across different
+                systems and platforms. My recent work at Sanka focused on integrations, product
+                features, automated workflows, and reliability improvements.
               </p>
               <div className="type-shell reveal-up reveal-delay-3">
-                <span className="type-label">Currently positioned as</span>
+                <span className="type-label">Engineering focus</span>
                 <div className="type-container">
                   <Type />
                 </div>
@@ -126,9 +127,6 @@ function Home() {
                     alt="Dixon Frederick portrait"
                     className="hero-portrait img-fluid"
                   />
-                  <span className="hero-badge hero-badge-bottom">
-                    E-commerce, POS, and ERP integrations
-                  </span>
                 </div>
               </div>
             </Col>
@@ -163,7 +161,7 @@ function Home() {
           <div className="section-header">
             <span className="section-eyebrow">Selected work</span>
             <h2 className="section-heading">
-              Recent projects across product engineering, research, and cloud-backed builds.
+              Recent projects across product engineering, applied systems work, and platform builds.
             </h2>
             <p className="section-copy">
               A small sample of the work, systems, and projects I have built.

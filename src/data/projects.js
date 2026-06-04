@@ -13,11 +13,11 @@ const projects = [
     title: "Sanka",
     category: "Back-Office Automation",
     description:
-      "A live back-office and automation platform where I build product features and integrations across e-commerce, POS, CRM, and operational workflows.",
+      "A live back-office and automation platform where I built product features, integrations, automated workflows, and React/API-driven improvements across CRM, e-commerce, POS, and ERP systems.",
     image: sanka,
     demoLink: "https://sanka.com/",
     demoLabel: "Live site",
-    stack: ["API Integrations", "ERP", "Full-Stack Development", "Automation"],
+    stack: ["API Integrations", "React", "CRM/ERP", "Automation"],
     featured: true,
   },
   {

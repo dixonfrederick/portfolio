@@ -16,6 +16,7 @@ function ProjectCards({
   title,
 }) {
   const hasActions = Boolean(ghLink || demoLink);
+  const hasPairedActions = Boolean(ghLink && demoLink && !isBlog);
 
   return (
     <Card className="project-card-view">
@@ -36,7 +37,7 @@ function ProjectCards({
           ))}
         </div>
         {hasActions && (
-          <div className="project-actions">
+          <div className={`project-actions${hasPairedActions ? " project-actions-paired" : ""}`}>
             {ghLink && (
               <Button
                 variant="primary"

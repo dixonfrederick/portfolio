@@ -112,21 +112,39 @@ button:focus,
   position: fixed;
   inset: 0;
   z-index: 999999;
+  overflow: hidden;
   background:
     radial-gradient(circle at center, rgba(199, 112, 240, 0.15), transparent 24%),
     var(--page-background);
 }
 
+#preloader::before,
 #preloader::after {
   content: "";
   position: absolute;
-  inset: calc(50% - 34px);
+  top: 50%;
+  left: 50%;
   width: 68px;
   height: 68px;
   border-radius: 50%;
+}
+
+#preloader::before {
+  transform: translate(-50%, -50%);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top-color: var(--accent);
-  animation: spinLoader 1s linear infinite;
+  box-shadow: 0 0 28px rgba(199, 112, 240, 0.14);
+}
+
+#preloader::after {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 58%,
+    rgba(199, 112, 240, 0.28) 72%,
+    var(--accent) 100%
+  );
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+  animation: spinLoader 0.85s linear infinite;
 }
 
 #preloader-none {
@@ -1217,11 +1235,6 @@ button:focus,
   height: 100%;
   object-fit: cover;
   padding: 0 !important;
-  transition: transform 0.8s ease;
-}
-
-.project-card-view:hover .project-card-image {
-  transform: scale(1.06);
 }
 
 .project-card-body {
@@ -1281,8 +1294,20 @@ button:focus,
   margin-top: auto;
 }
 
+.project-actions-paired {
+  flex-wrap: nowrap;
+  gap: 0.65rem;
+}
+
 .project-button {
   min-height: 3rem;
+}
+
+.project-actions-paired .project-button {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-inline: 0.9rem !important;
+  white-space: nowrap;
 }
 
 .project-button-secondary {
@@ -1441,8 +1466,12 @@ button:focus,
 }
 
 @keyframes spinLoader {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
@@ -1580,6 +1609,10 @@ button:focus,
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  #preloader::after {
+    animation: spinLoader 0.85s linear infinite !important;
   }
 
   .reveal-up {

@@ -7,8 +7,20 @@ import discordbot from "../Assets/Projects/discord.png";
 import warehouse from "../Assets/Projects/warehouse.png";
 import medium from "../Assets/Projects/medium.png";
 import github from "../Assets/Projects/github.jpg";
+import chatbotPlatform from "../Assets/Projects/chatbot-platform.svg";
 
 const projects = [
+  {
+    title: "Chatbot Platform",
+    category: "Full-Stack AI Platform",
+    description:
+      "A multi-agent chatbot workspace with authentication, per-agent prompts, markdown chat, file and image attachments, persistent workflow state, stop controls, and OpenRouter-backed provider retry handling.",
+    image: chatbotPlatform,
+    ghLink: "https://github.com/dixonfrederick/chatbot-yellowai-dixon",
+    demoLink: "https://chatbot-yellowai-dixon.vercel.app/",
+    stack: ["React", "Node/Express", "PostgreSQL", "OpenRouter"],
+    featured: true,
+  },
   {
     title: "Sanka",
     category: "Back-Office Automation",

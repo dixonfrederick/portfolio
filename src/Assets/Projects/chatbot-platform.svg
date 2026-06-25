@@ -1,0 +1,52 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="32" fill="#0f1724"/>
+  <rect x="24" y="24" width="1152" height="712" rx="28" fill="#142033" stroke="#2f3e54" stroke-width="2"/>
+  <rect x="48" y="48" width="238" height="664" rx="18" fill="#172537" stroke="#32445c" stroke-width="2"/>
+  <rect x="72" y="74" width="52" height="52" rx="14" fill="#2dd4bf"/>
+  <path d="M91 91h14v8H91v-8Z" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M86 99h24v15H86V99Z" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M93 87v-5h10v5" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="93" cy="106" r="2.5" fill="#ffffff"/>
+  <circle cx="103" cy="106" r="2.5" fill="#ffffff"/>
+  <text x="142" y="92" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Chatbot Platform</text>
+  <text x="142" y="122" fill="#a8bdd6" font-family="Inter, Arial, sans-serif" font-size="18">openrouter</text>
+  <rect x="72" y="166" width="190" height="52" rx="9" fill="#101a28" stroke="#40536d"/>
+  <text x="94" y="199" fill="#91a4bc" font-family="Inter, Arial, sans-serif" font-size="18">Support copilot</text>
+  <rect x="72" y="240" width="190" height="86" rx="9" fill="#101a28" stroke="#40536d"/>
+  <text x="94" y="276" fill="#91a4bc" font-family="Inter, Arial, sans-serif" font-size="18">Set role, tone,</text>
+  <text x="94" y="303" fill="#91a4bc" font-family="Inter, Arial, sans-serif" font-size="18">and rules.</text>
+  <rect x="72" y="346" width="190" height="48" rx="10" fill="#2dd4bf"/>
+  <text x="128" y="377" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="800">Create</text>
+  <rect x="72" y="442" width="190" height="72" rx="12" fill="#104d44" stroke="#247b72"/>
+  <text x="112" y="474" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="800">Research bot</text>
+  <text x="112" y="499" fill="#a8f3e8" font-family="Inter, Arial, sans-serif" font-size="16">12 chats</text>
+  <rect x="72" y="538" width="190" height="72" rx="12" fill="#172537"/>
+  <text x="112" y="570" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="800">Docs agent</text>
+  <text x="112" y="595" fill="#a8bdd6" font-family="Inter, Arial, sans-serif" font-size="16">4 chats</text>
+  <rect x="318" y="48" width="834" height="664" rx="18" fill="#111c2c" stroke="#32445c" stroke-width="2"/>
+  <rect x="318" y="48" width="834" height="124" rx="18" fill="#172537"/>
+  <path d="M344 82h18v14h-12l-6 6V82Z" stroke="#2dd4bf" stroke-width="2.5" stroke-linejoin="round"/>
+  <text x="374" y="98" fill="#2dd4bf" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">CHAT WORKSPACE</text>
+  <text x="344" y="138" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="900">Research bot</text>
+  <text x="844" y="120" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">settings</text>
+  <rect x="950" y="83" width="50" height="50" rx="10" fill="#101a28" stroke="#40536d"/>
+  <circle cx="975" cy="108" r="10" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="1016" y="83" width="92" height="50" rx="25" fill="#101a28" stroke="#40536d"/>
+  <circle cx="1042" cy="108" r="11" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="1066" y="95" width="26" height="26" rx="13" fill="#2dd4bf"/>
+  <rect x="360" y="212" width="394" height="82" rx="12" fill="#172537" stroke="#40536d"/>
+  <text x="382" y="238" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">AGENT</text>
+  <text x="382" y="272" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="19">Upload PDFs, images, or notes into chat context.</text>
+  <rect x="596" y="328" width="512" height="82" rx="12" fill="#123f67" stroke="#1f77ba"/>
+  <text x="618" y="354" fill="#d8ecff" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">YOU</text>
+  <text x="618" y="388" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="20">Summarize this reference letter and find the sender.</text>
+  <rect x="360" y="446" width="474" height="118" rx="12" fill="#172537" stroke="#40536d"/>
+  <text x="382" y="472" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">AGENT</text>
+  <text x="696" y="472" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800">OPENROUTER</text>
+  <text x="382" y="508" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="20">The letter is from the CEO listed in the attached document.</text>
+  <text x="382" y="540" fill="#a8bdd6" font-family="Inter, Arial, sans-serif" font-size="18">Answer includes markdown, files, workflow state, and retries.</text>
+  <rect x="360" y="608" width="674" height="62" rx="13" fill="#101a28" stroke="#40536d"/>
+  <text x="392" y="647" fill="#91a4bc" font-family="Inter, Arial, sans-serif" font-size="20">Ask this agent anything...</text>
+  <rect x="1054" y="608" width="54" height="62" rx="13" fill="#2dd4bf"/>
+  <path d="M1074 639l24-14-8 27-6-11-10-2Z" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+</svg>

@@ -14,7 +14,7 @@ const projects = [
     title: "Chatbot Platform",
     category: "Full-Stack AI Platform",
     description:
-      "A multi-agent chatbot workspace with authentication, per-agent prompts, markdown chat, file and image attachments, persistent workflow state, stop controls, and OpenRouter-backed provider retry handling.",
+      "A multi-agent chatbot with authentication, per-agent prompts, Markdown rendering, file and image uploads, persistent state, stop controls, and OpenRouter retries.",
     image: chatbotPlatform,
     ghLink: "https://github.com/dixonfrederick/chatbot-yellowai-dixon",
     demoLink: "https://chatbot-yellowai-dixon.vercel.app/",
@@ -25,7 +25,7 @@ const projects = [
     title: "Sanka",
     category: "Back-Office Automation",
     description:
-      "A live back-office and automation platform where I built product features, integrations, automated workflows, and React/API-driven improvements across CRM, e-commerce, POS, and ERP systems.",
+      "Sanka is a back-office platform for CRM, e-commerce, POS, and ERP workflows. I built product features, integrations, automations, and React/API migrations.",
     image: sanka,
     demoLink: "https://sanka.com/",
     demoLabel: "Live site",
@@ -36,7 +36,7 @@ const projects = [
     title: "HPCC",
     category: "Systems Research",
     description:
-      "An NS-3 simulation project exploring HPCC alongside PINT, LINT, and DINT-style telemetry variants to study high-precision congestion control behavior in more depth.",
+      "An NS-3 implementation of HPCC with PINT, LINT, and DINT telemetry variants for congestion-control experiments.",
     image: hpcc,
     ghLink: "https://github.com/TA-HPCC/hpcc",
     stack: ["NS-3", "C++", "Python"],
@@ -46,7 +46,7 @@ const projects = [
     title: "Brewscovery",
     category: "Cloud Application",
     description:
-      "A REST-based backend hub for a cafe recommendation app, connecting user, favorites, cafe, and machine learning services with Firebase integration and Google Cloud deployment.",
+      "A REST backend for a cafe recommendation app, connecting user, favorite, cafe, and machine-learning services through Firebase and Google Cloud.",
     image: brews,
     ghLink: "https://github.com/C23-PS051/api",
     stack: ["GCP", "Firebase", "REST APIs"],
@@ -56,7 +56,7 @@ const projects = [
     title: "Peers",
     category: "Product Engineering",
     description:
-      "A tutoring platform frontend built to help students discover tutors, compare profiles, and navigate online lesson options through a clean React-based experience.",
+      "A React frontend for browsing tutors, comparing profiles, and selecting online lessons, backed by Django.",
     image: peers,
     ghLink: "https://github.com/dixonfrederick/peers-frontend",
     stack: ["React", "Django", "UI/UX"],
@@ -65,7 +65,7 @@ const projects = [
     title: "Bike Rental Analysis",
     category: "Data Product",
     description:
-      "A pandas-driven analysis project packaged as a lightweight Streamlit dashboard to surface bike-sharing usage patterns in a more interactive and readable format.",
+      "A Streamlit dashboard built with pandas to analyze daily, monthly, and seasonal bike-rental patterns.",
     image: bike,
     ghLink: "https://github.com/dixonfrederick/bike-sharing",
     demoLink: "https://bike-sharing-rental.streamlit.app/",
@@ -75,7 +75,7 @@ const projects = [
     title: "Discord Multi-Function Bot",
     category: "Bot",
     description:
-      "A DiscordJS bot that combines AI chat, image generation, text utilities, and server-side helper features into a single multi-purpose assistant.",
+      "A Discord.js bot with AI chat, image generation, text utilities, and server-management commands.",
     image: discordbot,
     ghLink: "https://github.com/dixonfrederick/sisters-discord-service",
     stack: ["Node", "DiscordJS", "Automation"],
@@ -84,7 +84,7 @@ const projects = [
     title: "Warehouse API",
     category: "Backend Service",
     description:
-      "A Spring Boot warehouse API structured as a straightforward backend service, with Swagger documentation for testing and endpoint exploration.",
+      "A Spring Boot warehouse API with Swagger documentation for testing its endpoints.",
     image: warehouse,
     ghLink: "https://github.com/dixonfrederick/warehouse",
     stack: ["Spring Boot", "Swagger", "Java"],
@@ -93,7 +93,7 @@ const projects = [
     title: "Medium",
     category: "Writing",
     description:
-      "A collection of engineering articles covering testing, Scrum, software quality, monitoring, and practical lessons drawn from hands-on development work.",
+      "Articles about testing, Scrum, software quality, and monitoring.",
     image: medium,
     ghLink: "https://medium.com/@dixon.frederick",
     isBlog: true,
@@ -103,7 +103,7 @@ const projects = [
     title: "More on GitHub",
     category: "Archive",
     description:
-      "A broader archive of experiments, coursework, and smaller builds that shows range across application development, backend work, and technical exploration.",
+      "Coursework, experiments, utilities, and smaller application projects.",
     image: github,
     ghLink: "https://github.com/dixonfrederick",
   },

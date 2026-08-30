@@ -1,21 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import projects from "../../data/projects";
 
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <div className="section-header section-header-centered">
-          <span className="section-eyebrow">Selected work</span>
-          <h1 className="section-heading">
-            Projects spanning platform delivery, applied systems work, and product engineering.
-          </h1>
+          <span className="section-eyebrow">Projects</span>
           <p className="section-copy">
-            A mix of production-style builds, research-oriented work, and practical experiments with real implementation constraints.
+            Source code and live demos for web applications, APIs, research, and automation.
           </p>
         </div>
         <Row className="g-4 project-grid">

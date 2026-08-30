@@ -5,18 +5,15 @@ function Github() {
   return (
     <section className="github-panel">
       <div className="section-header">
-        <span className="section-eyebrow">Consistency</span>
-        <h2 className="section-heading">GitHub contribution activity.</h2>
-        <p className="section-copy">
-          A quick view of how frequently I spend time building, iterating, and contributing in code.
-        </p>
+        <span className="section-eyebrow">GitHub</span>
+        <h2 className="section-heading">Contribution History</h2>
       </div>
       <div className="github-calendar-shell">
         <GitHubCalendar
           username="dixonfrederick"
           blockSize={14}
           blockMargin={6}
-          color="#c084f5"
+          color="#faff69"
           fontSize={14}
         />
       </div>

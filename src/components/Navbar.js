@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
@@ -11,7 +11,6 @@ import {
 import { BsGithub } from "react-icons/bs";
 import { CgFileDocument } from "react-icons/cg";
 import { FiMoon, FiSun } from "react-icons/fi";
-import profile from "../Assets/profile.png";
 
 function ThemeToggle({ isDark, onToggleTheme, className = "" }) {
   return (
@@ -53,20 +52,10 @@ function NavBar({ theme, onToggleTheme }) {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="lg"
+      expand="md"
       className={`navbar-shell${navColour ? " sticky" : ""}`}
     >
-      <Container>
-        <Navbar.Brand as={Link} to="/" className="navbar-brand">
-          <span className="brand-mark">
-            <img src={profile} alt="Dixon Frederick" />
-          </span>
-          <span className="brand-copy">
-            <strong>Dixon Frederick</strong>
-            <span>Software Engineer</span>
-          </span>
-        </Navbar.Brand>
-
+      <Container className="navbar-center-container">
         <div className="navbar-mobile-controls">
           <ThemeToggle isDark={isDark} onToggleTheme={onToggleTheme} />
           <Navbar.Toggle
@@ -81,8 +70,8 @@ function NavBar({ theme, onToggleTheme }) {
           </Navbar.Toggle>
         </div>
 
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto align-items-lg-center">
+        <Navbar.Collapse id="responsive-navbar-nav" className="navbar-center-collapse">
+          <Nav className="align-items-md-center navbar-center-menu">
             <Nav.Item>
               <Nav.Link
                 as={NavLink}

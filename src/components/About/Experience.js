@@ -3,28 +3,42 @@ import { Col, Row } from "react-bootstrap";
 
 const experienceItems = [
   {
+    role: "Developer",
+    organization: "Landscape Alliance | CIFOR & ICRAF",
+    period: "July 2026 - Present",
+    summary: "Development and technical review work for DecisionSAF.",
+    points: [
+      "Optimize DecisionSAF, an agroforestry decision-support platform, focusing on its interface and consistency.",
+      "Review security, maintainability, and usability risks and document findings and test scenarios.",
+      "Work with the client to fix issues, redesign the application, and implement features.",
+    ],
+    tags: ["Product Development", "Security Review", "Testing"],
+    featured: true,
+  },
+  {
     role: "Software Engineer",
     organization: "Sanka",
     period: "September 2024 - May 2026",
-    summary: "Built product features, integrations, and workflow improvements across commerce and operational systems.",
+    summary: "Product development and integrations for Sanka's back-office platform.",
     points: [
       "Integrated Sanka with 10+ CRM, e-commerce, POS, and ERP platforms including HubSpot, Shopify, and Salesforce.",
       "Built custom applications, extensions, and automated workflows for third-party platforms.",
-      "Migrated Django template-based pages to React and API-driven architecture for smoother user experiences.",
-      "Maintained automated tests and resolved customer-reported issues to improve product reliability.",
+      "Migrated Django template pages to React and API-based pages.",
+      "Developed and maintained end-to-end tests for critical user workflows.",
+      "Resolved more than five customer-reported issues or feature requests per day.",
+      "Worked with more than six developers to review tickets, plan changes, and resolve technical issues.",
     ],
     tags: ["API Integrations", "React", "Automation"],
-    featured: true,
   },
   {
     role: "Teaching & Research Assistant",
     organization: "Universitas Indonesia",
-    period: "February 2023 - July 2024",
-    summary: "Supported teaching responsibilities and simulation-focused research work.",
+    period: "February 2022 - July 2024",
+    summary: "Teaching support and simulation research at Universitas Indonesia.",
     points: [
       "Assisted Discrete Mathematics and Introduction to Computer Organization courses.",
-      "Migrated, configured, and ran LAMMPS simulations for research workflows.",
-      "Tested and debugged simulation results across 10+ scenarios and environments.",
+      "Configured and ran LAMMPS simulations for research.",
+      "Tested and debugged simulations across more than 10 scenarios and environments.",
     ],
     tags: ["Teaching", "Research", "Debugging"],
   },
@@ -32,7 +46,7 @@ const experienceItems = [
     role: "Back End Developer",
     organization: "PT. Pharos Indonesia",
     period: "August 2023 - December 2023",
-    summary: "Worked on backend-driven UI infrastructure and stock management workflows.",
+    summary: "Backend development for a UI framework and stock management system.",
     points: [
       "Developed and maintained 10+ Django widgets for a backend-driven UI application framework.",
       "Built stock management functionality across databases, models, APIs, and pages.",
@@ -47,11 +61,6 @@ const credentialItems = [
     value: "Computer Science, Universitas Indonesia",
     detail: "2020 - 2024",
   },
-  {
-    label: "Language",
-    value: "English",
-    detail: "Professional proficiency",
-  },
 ];
 
 function Experience() {
@@ -59,7 +68,7 @@ function Experience() {
     <>
       <Row className="g-4 experience-grid">
         {experienceItems.map((item) => (
-          <Col lg={4} key={`${item.role}-${item.organization}`}>
+          <Col md={6} key={`${item.role}-${item.organization}`}>
             <article className={`experience-card ${item.featured ? "is-featured" : ""}`}>
               <div className="experience-card-header">
                 <div>
@@ -86,7 +95,7 @@ function Experience() {
 
       <div className="credentials-shell">
         <div className="credentials-header">
-          <h3>Education and Profile</h3>
+          <h3>Credentials</h3>
         </div>
         <Row className="g-3 credential-grid justify-content-center">
           {credentialItems.map((item) => (

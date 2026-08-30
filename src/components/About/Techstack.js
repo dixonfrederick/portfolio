@@ -41,6 +41,14 @@ function HtmxIcon() {
   );
 }
 
+function CiCdIcon() {
+  return (
+    <span className="letter-tech-icon" aria-hidden="true">
+      CI
+    </span>
+  );
+}
+
 const techStack = [
   { label: "Python", icon: <DiPython /> },
   { label: "Java", icon: <DiJava /> },
@@ -53,6 +61,7 @@ const techStack = [
   { label: "C++", icon: <SiCplusplus /> },
   { label: "JavaScript", icon: <SiJavascript /> },
   { label: "Git", icon: <SiGit /> },
+  { label: "CI/CD", icon: <CiCdIcon /> },
   { label: "Discord.js", icon: <SiDiscord /> },
   { label: "Node.js", icon: <SiNodedotjs /> },
   { label: "Firebase", icon: <SiFirebase /> },
@@ -70,7 +79,7 @@ function Techstack() {
   return (
     <Row className="g-3 skill-grid">
       {techStack.map((item) => (
-        <Col xs={6} md={4} lg={3} key={item.label}>
+        <Col xs={6} sm={4} lg={2} key={item.label}>
           <div className="skill-card">
             <div className="skill-icon">{item.icon}</div>
             <span className="skill-label">{item.label}</span>

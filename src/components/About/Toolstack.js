@@ -51,7 +51,7 @@ function Toolstack() {
   return (
     <Row className="g-3 skill-grid">
       {toolStack.map((item) => (
-        <Col xs={6} md={4} lg={3} key={item.label}>
+        <Col xs={6} sm={4} lg={2} key={item.label}>
           <div className="skill-card">
             <div className="skill-icon">{item.icon}</div>
             <span className="skill-label">{item.label}</span>

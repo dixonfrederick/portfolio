@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import pdf from "../../Assets/CV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -22,16 +21,9 @@ function ResumeNew() {
 
   return (
     <Container fluid className="resume-section">
-      <Particle />
       <Container>
         <div className="section-header section-header-centered resume-header">
-          <span className="section-eyebrow">Resume</span>
-          <h1 className="section-heading">
-            A concise overview of my recent experience, focus areas, and project background.
-          </h1>
-          <p className="section-copy">
-            Preview the latest 2026 resume below or open the PDF directly for a cleaner read.
-          </p>
+          <h1 className="section-heading">Resume</h1>
           <Button
             variant="primary"
             href={pdf}
